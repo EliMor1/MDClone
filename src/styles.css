@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+/* 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+/* Apply global styles to center elements */
+body, html {
+    margin: 0;
+    /* margin-bottom: 20%; */
+    padding: 2% 5% 2% 5%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: px; */
+  }
+  
+  .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 0.9 opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup h3 {
+    margin: 0 0 20px 0;
+  }
+  
+  .popup textarea,
+  .popup input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .popup button {
+    margin: 5px;
+  }
+  
+  .task-container, .subordinate-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding:30px 50px 30px 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  } 
+
+
+  .subordinate-item, .employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .subordinate-item p, .employee-item p {
+    margin: 0;
+  }
+  
+  .subordinate-item button, .employee-item button {
+    margin-left: 10px;
+  }
+  
+  
+  

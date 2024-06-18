@@ -1,0 +1,8 @@
+<h2>Employee List</h2>
+<ul>
+  <li *ngFor="let employee of employees" class="employee-item">
+    <p>{{ employee.firstName }} {{ employee.lastName }}</p>
+    <p>{{employee.position}}</p>
+    <button (click)="viewDetails(employee.id)">View</button>
+  </li>
+</ul>

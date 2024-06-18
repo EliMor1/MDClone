@@ -1,0 +1,9 @@
+<form [formGroup]="form" class="popup">
+  <h3>Submit Report</h3>
+  <textarea formControlName="reportText" placeholder="Enter report text"></textarea>
+  <br />
+  <button (click)="submitReport()" [disabled]="form.invalid">Save</button>
+  <button (click)="closePopup()">Cancel</button>
+</form>
+
+  

@@ -1,0 +1,12 @@
+<form class="popup" [formGroup]="form">
+  <h2>Assign Task</h2>
+  <textarea formControlName="taskText"></textarea>
+  <br>
+  <input type="date" formControlName="dueDate">
+  <br>
+  <span>
+    <button (click)="assignTask()" [disabled]="form.invalid">Save</button>
+    <button (click)="closePopup()">Cancel</button>
+  </span>
+</form>
+  
